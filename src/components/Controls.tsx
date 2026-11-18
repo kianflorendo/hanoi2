@@ -187,12 +187,12 @@ export const Controls: React.FC<ControlsProps> = ({
             </div>
           </div>
 
-          {/* Disk Quantity Selector (3 to 6) */}
+          {/* Disk Quantity Selector */}
           <div className="flex items-center gap-1.5 bg-slate-950/60 p-1 rounded-lg border border-slate-800">
             <Sliders className="w-3.5 h-3.5 text-slate-400 ml-1.5" />
             <span className="text-[11px] text-slate-400 font-medium">Disks:</span>
             <div className="flex items-center gap-1">
-              {[3, 4, 5, 6].map((count) => (
+              {[3, 4, 5, 6, 8, 10, 12, 16].map((count) => (
                 <button
                   key={count}
                   onClick={() => onDiskCountChange(count)}
